@@ -101,9 +101,9 @@ body {
     display: flex;
     flex-direction: column; /* Membuat barisan menurun */
     gap: 12px; /* Jarak antar tombol */
-    width: 90%; /* Lebar barisan tombol */
+    width: 92%; /* Lebar barisan tombol */
     max-width: 400px;
-    margin: 20px auto; /* Agar posisi di tengah */
+    margin: 35px auto 20px auto; /* Agar posisi di tengah */
 }
 
 .menu-item-row {
@@ -159,18 +159,19 @@ body {
 .data-info-container {
     display: flex;
     justify-content: center;
-    gap: 15px;
-    margin-top: 30px;
-    flex-wrap: wrap; /* Supaya tetap rapi di layar HP */
+    gap: 8px;
+    margin-top: 10px;
+    padding: 0 10px; /* Supaya tetap rapi di layar HP */
 }
 
 .data-card {
-    background-color: #66f63e; /* Warna kuning tema Anda */
-    padding: 15px;
-    border-radius: 15px;
-    width: 120px;
-    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    background-color: #FCF4A3;
+    padding: 12px 5px;
+    border-radius: 10px;
+    flex: 1; /* Membuat 3 kotak memiliki lebar yang sama rata */
+    max-width: 110px;
     text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .data-card h4 {
