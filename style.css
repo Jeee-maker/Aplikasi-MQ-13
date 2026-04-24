@@ -1,0 +1,170 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #cac7c1; /* Warna latar belakang ringan */
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+    width: 80%;
+}
+
+.header-text {
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-size: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.main-logo {
+    max-width: 200px; /* Anda bisa ubah ukuran lebar gambar di sini */
+    height: auto;
+    filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.4));
+}
+.sub-text {
+    color: #080808; /* Warna abu-abu gelap agar tidak sepekat judul atas */
+    font-size: 15px; /* Anda bisa ubah ukuran ini (misal: 20px atau 28px) */
+    margin-top: 20px; /* Memberi jarak antara logo dan teks di bawahnya */
+    font-style: italic; /* Opsional: membuat teks miring agar terlihat seperti sub-judul */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+.login-container {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Jarak antar kolom */
+}
+
+.login-input {
+    width: 300px;
+    padding: 15px;
+    border: none;
+    border-radius: 8px; /* Sudut kotak agak bulat */
+    background-color: #FCF4A3; /* Warna kuning permintaan Anda */
+    color: black; /* Warna tulisan saat mengetik */
+    font-weight: bold;
+    text-align: center; /* Tulisan di tengah */
+    outline: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Mengatur warna tulisan placeholder (kata di tengah kolom) */
+.login-input::placeholder {
+    color: black;
+    opacity: 1; /* Pastikan warna hitamnya pekat */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.login-button {
+    margin-top: 10px;
+    padding: 10px 40px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.login-button:hover {
+    background-color: #000;
+}
+.forgot-password {
+    margin-top: 15px;
+    color: black; /* Sesuai permintaan Anda */
+    text-decoration: none; /* Menghilangkan garis bawah link */
+    font-size: 14px;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.forgot-password:hover {
+    text-decoration: underline; /* Garis bawah hanya muncul saat kursor di atasnya */
+    color: #333;
+}
+#dashboard-page {
+    animation: fadeIn 0.5s; /* Efek halus saat muncul */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+/* Container untuk grid 3 baris x 2 kolom */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Membuat 2 kolom */
+    gap: 50px; /* Jarak antar tombol */
+    margin: 80px auto;
+    max-width: 400px; /* Membatasi lebar agar tetap di tengah */
+    justify-items: center;
+}
+
+/* Style tombol berbentuk OVAL */
+.oval-button {
+    width: 160px;
+    padding: 15px 20px;
+    background-color: #FCF4A3; /* Warna kuning sesuai tampilan pertama */
+    color: black; /* Teks warna hitam */
+    border: none;
+    border-radius: 50px; /* Nilai besar untuk membuat bentuk OVAL sempurna */
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, background-color 0.2s;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Bayangan teks halus */
+}
+
+/* Efek saat tombol ditekan atau disentuh kursor */
+.oval-button:hover {
+    background-color: #fce96a; /* Warna kuning sedikit lebih gelap saat hover */
+    transform: scale(1.05); /* Efek membesar sedikit */
+}
+
+/* Penyesuaian tombol logout agar tetap di bawah */
+.logout-button {
+    margin-top: 50px;
+    padding: 10px 30px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.data-info-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+    flex-wrap: wrap; /* Supaya tetap rapi di layar HP */
+}
+
+.data-card {
+    background-color: #66f63e; /* Warna kuning tema Anda */
+    padding: 15px;
+    border-radius: 15px;
+    width: 120px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.data-card h4 {
+    font-size: 12px;
+    margin: 0 0 10px 0;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.data-card p {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    color: black;
+}

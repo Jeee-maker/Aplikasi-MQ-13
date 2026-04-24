@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mulazamah MQ-13</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="login-page" class="container">
+        <h2 class="header-text">ATAS BERKAT ROCHMAT ALLOH YANG MAHA KUASA</h2>
+        <div class="logo-wrapper">
+            <img src="Lambang MQ.png" alt="Lambang MQ" class="main-logo">
+        </div>
+        <h3 class="sub-text">Mulazamah Murid-Murid MQ-13</h3>
+
+        <div class="login-container">
+            <input type="text" id="username" placeholder="Username/Nama Murid" class="login-input">
+            <input type="password" id="password" placeholder="Password/Sandi kamu" class="login-input">
+            <button onclick="handleLogin()" class="login-button">MASUK</button>
+            <a href="#" class="forgot-password">Kamu lupa Username dan Passwordnya?</a>
+        </div>
+    </div>
+
+    <div id="dashboard-page" class="container" style="display: none;">
+    <h2 class="header-text">DATA MULAZAMAH SAYA</h2>
+    
+    <div class="data-info-container">
+    <div class="data-card">
+        <h4>Terbayar</h4>
+        <p id="info-terbayar">-</p>
+    </div>
+    <div class="data-card">
+        <h4>Kurang</h4>
+        <p id="info-kurang">-</p>
+    </div>
+    <div class="data-card">
+        <h4>Seharusnya</h4>
+        <p id="info-seharusnya">-</p>
+    </div>
+</div>
+
+    <div class="menu-grid">
+        <button class="oval-button">Tahun 1446H.</button>
+        <button class="oval-button">Tahun 1447H.</button>
+        <button class="oval-button">Tahun 1448H.</button>
+        <button class="oval-button">Tahun 1449H.</button>
+        <button class="oval-button">Tahun 1450H.</button>
+        <button class="oval-button">Pembayaran Lainnya</button>
+    </div>
+
+    <button class="logout-button" onclick="location.reload()">KELUAR</button>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
