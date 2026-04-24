@@ -97,13 +97,31 @@ body {
     to { opacity: 1; }
 }
 /* Container untuk grid 3 baris x 2 kolom */
-.menu-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Membuat 2 kolom */
-    gap: 50px; /* Jarak antar tombol */
-    margin: 80px auto;
-    max-width: 400px; /* Membatasi lebar agar tetap di tengah */
-    justify-items: center;
+.menu-vertical-container {
+    display: flex;
+    flex-direction: column; /* Membuat barisan menurun */
+    gap: 12px; /* Jarak antar tombol */
+    width: 90%; /* Lebar barisan tombol */
+    max-width: 400px;
+    margin: 20px auto; /* Agar posisi di tengah */
+}
+
+.menu-item-row {
+    background-color: #ffffff; /* Warna tombol putih bersih */
+    color: #333;
+    border: 2px solid #FCF4A3; /* Garis pinggir warna kuning khas web Anda */
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 12px; /* Sudut tumpul yang elegan */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.menu-item-row:hover {
+    background-color: #FCF4A3; /* Berubah kuning saat ditekan/disentuh */
+    transform: translateY(-2px);
 }
 
 /* Style tombol berbentuk OVAL */
@@ -171,7 +189,7 @@ body {
 .keterangan-biaya {
     text-align: center;
     font-size: 14px;
-    color: #555;
+    color: #030000;
     margin-bottom: 15px; /* Memberi jarak ke kartu data di bawahnya */
     font-style: italic; /* Memastikan font miring */
 }
