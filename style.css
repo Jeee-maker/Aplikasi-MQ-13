@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #cac7c1; /* Warna latar belakang ringan */
+    background-color: #ffffff; /* Warna latar belakang ringan */
     display: flex;
     justify-content: center;
 }
@@ -96,28 +96,6 @@ body {
     from { opacity: 0; }
     to { opacity: 1; }
 }
-/* Container untuk grid 3 baris x 2 kolom */
-.menu-vertical-container {
-    display: flex;
-    flex-direction: column; /* Membuat barisan menurun */
-    gap: 12px; /* Jarak antar tombol */
-    width: 92%; /* Lebar barisan tombol */
-    max-width: 400px;
-    margin: 35px auto 20px auto; /* Agar posisi di tengah */
-}
-
-.menu-item-row {
-    background-color: #ffffff; /* Warna tombol putih bersih */
-    color: #333;
-    border: 2px solid #FCF4A3; /* Garis pinggir warna kuning khas web Anda */
-    padding: 15px;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 12px; /* Sudut tumpul yang elegan */
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-}
 
 .menu-item-row:hover {
     background-color: #FCF4A3; /* Berubah kuning saat ditekan/disentuh */
@@ -193,4 +171,57 @@ body {
     color: #030000;
     margin-bottom: 15px; /* Memberi jarak ke kartu data di bawahnya */
     font-style: italic; /* Memastikan font miring */
+}
+/* Kotak Persegi Panjang Utama (Bingkai Menu) */
+/* Bingkai Utama */
+.main-data-wrapper {
+    background-color: #ffffff; /* Warna putih di dalam bingkai */
+    border: 2px solid #FCF4A3; /* Garis pinggir kuning */
+    border-radius: 20px;       /* Sudut tumpul */
+    padding: 30px 15px;        /* Ruang di dalam bingkai */
+    margin: 40px auto;         /* Jarak luar dan posisi tengah */
+    width: 90%;                /* Lebar di HP */
+    max-width: 500px;          /* Lebar maksimal agar tidak terlalu melar di PC */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Bayangan halus */
+    text-align: center;
+}
+
+/* Judul di dalam bingkai */
+.header-text-small {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Keterangan miring */
+.keterangan-biaya {
+    font-size: 13px;
+    margin-bottom: 25px;
+    color: #666;
+}
+
+/* Pengatur 3 Kolom agar sejajar di dalam bingkai */
+.data-info-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Jarak antar kotak kuning */
+}
+
+.data-card {
+    background-color: #FCF4A3;
+    padding: 15px 5px;
+    border-radius: 12px;
+    flex: 1; /* Membagi rata lebar kolom */
+    min-width: 100px;
+}
+
+.data-card h4 {
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+
+.data-card p {
+    font-size: 14px;
+    font-weight: bold;
 }
